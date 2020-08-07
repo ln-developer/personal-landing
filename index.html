@@ -4,15 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Дипломный проект</title>
-        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/styles.min.css">
         <link rel="stylesheet" type="text/css" href="styles/swiper.min.css">
         <link rel="stylesheet" type="text/css" href="fonts/icon-font/css/all.min.css">
-        <link rel="stylesheet" type="text/css" href="styles/media.css">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="styles/media.min.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="js/jquery-3.5.0.min.js"></script>
         <script src="js/swiper.min.js"></script>
         <script src="js/jquery.parallax.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/script.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     </head>
 
@@ -21,7 +21,7 @@
         <header class="header">
             <div class="container header__container block_flex">
                 
-                <button type="menu" class="menu-burger_header_mobile">
+                <button type="button" class="menu-burger_header_mobile">
                     <i class="fas fa-bars"></i>
                 </button>
 
@@ -332,7 +332,7 @@
             <div class="popup__body block_flex">
                 <div class="popup__content block_flex">
                     <div class="popup__top block_flex">
-                        <button type="reset" class="popup__button_exit_call">
+                        <button type="reset" class="popup__button_exit popup__button_exit_call">
                             <i class="fa fa-times close" aria-hidden="true"></i>
                         </button>
                     </div>
@@ -340,10 +340,10 @@
                     <div class="popup__form">
                         <form action="#" method="POST" enctype="multipart/form-data">
                             <label for="popup__input_name_call" class="popup__header">Имя</label><br>
-                                <input type="text" required name="name" id="popup__input_name_call" placeholder="Ваше имя?"><br>
+                                <input type="text" required name="name" class="popup__input popup__input_name" id="popup__input_name_call" placeholder="Ваше имя?"><br>
 
                             <label for="popup__input_tel_call" class="popup__header">Телефон</label><br>
-                                <input type="tel" required name="tel" class="tel-mask" id="popup__input_tel_call" placeholder="Ваш телефон?" maxlength="10"><br>
+                                <input type="tel" required name="tel" class="popup__input tel-mask popup__input_tel" id="popup__input_tel_call" placeholder="Ваш телефон?" maxlength="10"><br>
 
                             <input type="submit" value="Отправить" class="popup__input_send">
                         </form>
@@ -356,7 +356,7 @@
             <div class="popup__body block_flex">
                 <div class="popup__content block_flex">
                     <div class="popup__top block_flex">
-                        <button type="reset" class="popup__button_exit_order">
+                        <button type="reset" class="popup__button_exit popup__button_exit_order">
                             <i class="fa fa-times close" aria-hidden="true"></i>
                         </button>
                     </div>
@@ -364,13 +364,13 @@
                     <div class="popup__form">
                         <form action="#" method="POST" enctype="multipart/form-data">
                             <label for="popup__input_name_order" class="popup__header">Имя</label><br>
-                                <input type="text" required name="name" id="popup__input_name_order" placeholder="Ваше имя?"><br>
+                                <input type="text" required name="name" class="popup__input popup__input_name" id="popup__input_name_order" placeholder="Ваше имя?"><br>
 
                             <label for="popup__input_tel_order" class="popup__header">Телефон</label><br>
-                                <input type="tel" required name="tel" class="tel-mask" id="popup__input_tel_order" placeholder="Ваш телефон?" maxlength="10"><br>
+                                <input type="tel" required name="tel" class="popup__input tel-mask popup__input_tel" id="popup__input_tel_order" placeholder="Ваш телефон?" maxlength="10"><br>
 
                             <label for="popup__input_email" class="popup__header">E-mail</label><br>
-                                <input type="email" required name="email" id="popup__input_email" placeholder="Ваш e-mail?"><br>
+                                <input type="email" required name="email" class="popup__input" id="popup__input_email" placeholder="Ваш e-mail?"><br>
 
                             <label for="popup__input_textarea" class="popup__header">Комментарии</label><br>
                                 <textarea name="textarea" required id="popup__input_textarea" maxlength="500" placeholder="*(не более 500 символов)" rows="5"></textarea>
@@ -381,5 +381,18 @@
                 </div>
             </div>
         </div>
+
+        <!-- <div class="popup-graditude">
+            <div class="popup-graditude__body block_flex">
+                <div class="popup-graditude__content block_flex">
+                    <button type="reset" class="popup-graditude__button_exit">
+                        <i class="fa fa-times close" aria-hidden="true"></i>
+                    </button>
+
+                    <p class="popup-graditude__text">Ваша заявка успешно отправлена!</p>
+                </div>
+            </div>
+        </div> -->
+        
     </body>
 </html>

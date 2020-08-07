@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    // NAVIGATION
+
     $('nav a').on('click', function(event){
       event.preventDefault();
 
@@ -18,6 +21,8 @@ $(document).ready(function(){
         scrollTop: 0,
       }, 700);
     });
+
+    // SWIPER
 
     var swiper = new Swiper('.swiper-container', {
         loop: true,
@@ -52,8 +57,12 @@ $(document).ready(function(){
         }
       });
     
+    // PARALLAX
+
     $('.parallax__list>li').addClass('layer');
     $('.parallax__list').parallax();
+
+    // MENU
 
     const burger = document.querySelector('.menu-burger_header_mobile');
     const close = document.querySelector('.main-menu__button_exit');
@@ -73,6 +82,8 @@ $(document).ready(function(){
     burger.addEventListener('click', showMenu);
     close.addEventListener('click', closeMenu);
 
+    // POPUP-CALL
+
     const popupOpenCall = document.querySelectorAll('.popup_call_open');
     const popupCloseCall = document.querySelector('.popup__button_exit_call');
     const popupCall = document.querySelector('.popup_call');
@@ -90,7 +101,7 @@ $(document).ready(function(){
     popupOpenCall.forEach(btn => btn.addEventListener('click', showPopupCall));
     popupCloseCall.addEventListener('click', closePopupCall);
 
-
+    // POPUP-ORDER
 
     const popupOpenOrder = document.querySelectorAll('.popup_order_open');
     const popupCloseOrder = document.querySelector('.popup__button_exit_order');
@@ -108,6 +119,8 @@ $(document).ready(function(){
 
     popupOpenOrder.forEach(btn => btn.addEventListener('click', showPopupOrder));
     popupCloseOrder.addEventListener('click', closePopupOrder);
+
+    // TEL-MASK
 
     $(function() {
       $('.tel-mask').mask('+7(000)000-00-00');
