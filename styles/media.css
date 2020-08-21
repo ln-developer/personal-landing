@@ -1,23 +1,3 @@
-@media screen and (max-width: 1200px) {
-    .title-part_right-side__background {
-        right: -660px;
-    }
-
-    .title-part_right-side__main-imagine {
-        right: -680px;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .title-part_right-side__background {
-        right: -580px;
-    }
-
-    .title-part_right-side__main-imagine {
-        right: -580px;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .menu-burger_header_mobile {
         display: block;
@@ -123,8 +103,8 @@
     }
 
     .parallax__element_5 {
-        top: 10%;
-        left: 90%;
+        top: 1%;
+        left: 87%;
    }
 
     .title-part_left-side_desktop {
@@ -144,18 +124,10 @@
         padding: 24px 0;
     }
 
-    .title-part_right-side__background {
-        background-image: url(../img/title-part/svg02.svg);
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        top: 139px;
-        right: -468px;
-    }
-
     .title-part_right-side__main-imagine {
-        top: -1px;
-        right: -496px;
+        bottom: 0;
+        right: -20px;
+        height: 650px;
     }
 
     .skill__list {
@@ -252,12 +224,10 @@
 }
 
 @media screen and (max-width: 950px) {
-    .title-part__background img {
-        right: -420px;
-    }
-
-    .title-part__photo {
-        right: -120px;
+    .title-part_right-side__main-imagine {
+        bottom: 0;
+        right: -60px;
+        height: 600px;
     }
 
     .swiper__span_name {
@@ -292,13 +262,14 @@
         font-size: 21px;
     }
 
-    .title-part_right-side__background {
-        right: -340px;
+    .title-part_right-side {
+        right: -450px;
     }
 
     .title-part_right-side__main-imagine {
-        top: 10px;
-        right: -410px;
+        bottom: 0;
+        right: 140px;
+        width: 700px;
     }
 
     .swiper-container {
@@ -332,13 +303,13 @@
 }
 
 @media screen and (max-width: 820px) {
-    .title-part__background img {
-        top: 95px;
-        right: -485px;
+    .title-part_right-side {
+        right: -500px;
     }
 
-    .title-part__photo {
-        right: -115px;
+    .parallax__element_2 {
+        top: 1%;
+        left: 94%;
     }
 
     .price__header {
@@ -411,13 +382,15 @@
         padding: 18px 0;
     }
 
-    .title-part_right-side__background {
-        top: 30px;
-        right: -320px;
+    .title-part_right-side {
+        height: 550px;
+        bottom: 0px;
+        right: -460px;
     }
 
     .title-part_right-side__main-imagine {
-        right: -370px;
+        right: 50px;
+        height: 480px;
     }
 
     .skill__container {
@@ -528,12 +501,8 @@
         padding: 12px 0;
     }
 
-    .title-part_right-side__background {
-        right: -270px;
-    }
-    
     .title-part_right-side__main-imagine {
-        right: -270px;
+        right: 70px;
     }
 
     .section-header {
@@ -574,6 +543,10 @@
 }
 
 @media screen and (max-width: 580px) {
+    .title-part_right-side {
+        right: -500px;
+    }
+
     .contacts__container {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -626,20 +599,15 @@
    }
 
     .title-part_left-side_desktop {
-        display: none;
-    }
-
-    .title-part_left-side_mobile {
-        display: -webkit-box;
-        display: -ms-flexbox;
+        position: absolute;
+        z-index: 200;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        flex-direction: column;
+        align-items: center;
+        bottom: -222px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
     }
 
     .title-part__header {
@@ -665,10 +633,13 @@
         padding-top: 50px;
     }
 
+    .skill__container {
+        padding: 202px 30px 50px;
+    }
 
-    .title-part_right-side__background {
-        top: 65px;
-        right: 0;
+
+    .title-part_right-side {
+        right: -195px;
     }
     
     .title-part_right-side__main-imagine {
@@ -689,12 +660,8 @@
         margin-left: 20px;
     }
 
-    .title-part__background img {
-        top: 120px;
-    }
-
-    .title-part__photo {
-        right: -30px;
+    .title-part_right-side {
+        right: -270px;
     }
 
     .parallax__element_2 {
@@ -719,6 +686,14 @@
         width: 80%;
         font-size: 16px;
         margin-top: 27px;
+    }
+
+    .title-part_left-side_desktop {
+        bottom: -190px;
+    }
+
+    .skill__container {
+        padding: 170px 30px 50px;
     }
 
     .skill__item {
@@ -786,10 +761,6 @@
         width: 0;
     }
 
-    .header__container {
-        padding: 26px 20px;
-    }
-
     .fa-bars {
         font-size: 24px;
     }
@@ -816,7 +787,7 @@
     }
 
     .parallax__element_2 {
-        top: 40%;
+        top: 25%;
     }
 
     .title-part__background img {
@@ -830,10 +801,6 @@
         height: 103%;
     }
 
-    .skill__container {
-        padding: 50px 20px;
-    }
-
     .title-part__subtitle {
         margin-top: 10px;
     }
@@ -841,16 +808,17 @@
     .title-part__button {
         padding: 18px 0;
         margin-top: 30px;
-        width: 100%;
+        width: 75%;
     }
 
-    .title-part_right-side__background {
-        background-image: url(../img/title-part/svg03.svg);
-        top: 90px;
+    .title-part_right-side {
+        right: -270px;
+        height: 420px;
     }
     
     .title-part_right-side__main-imagine {
-        right: -40px;
+        right: -140px;
+        height: 360px;
     }
 
     .skill__header {
@@ -889,6 +857,10 @@
 }
 
 @media screen and (max-width: 320px) {
+    .title-part_left-side_desktop {
+        bottom: -210px;
+    }
+
     .title-part_right-side__background {
         width: 150%;
         top: 95px;
@@ -896,13 +868,15 @@
     }
 
     .title-part_right-side__main-imagine {
-        background-size: auto 105%;
-        top: 40px;
-        right: -52px;
+        right: -140px;
+    }
+
+    .title-part__subtitle {
+        padding: 0 20px;
     }
 
     .skill__container {
-        padding: 14px 20px;
+        padding: 190px 30px 50px;
     }
 
     .skill__item {
